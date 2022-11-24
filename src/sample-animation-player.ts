@@ -13,7 +13,7 @@ export function sampleAnimation() {
   let timeHolder: HTMLDivElement;
 
   function init(config: ISampleAnimation) {
-    logger.debug(`${SAMPLE_ANIMATION} init`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} init`);
 
     element = getObjectElementById(config.itemId!)!;
 
@@ -28,19 +28,19 @@ export function sampleAnimation() {
   }
 
   function destroy(config: any) {
-    logger.debug(`${SAMPLE_ANIMATION} destroy`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} destroy`);
   }
 
   function rootStart(config: any) {
-    logger.debug(`${SAMPLE_ANIMATION} rootStart`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} rootStart`);
   }
 
   function rootStop(config: any) {
-    logger.debug(`${SAMPLE_ANIMATION} rootStop`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} rootStop`);
   }
 
   function start(config: any, isManual?: boolean) {
-    logger.debug(`${SAMPLE_ANIMATION}  start`);
+    logger.animation.debug(`${SAMPLE_ANIMATION}  start`);
 
     element.style.border = "5px solid red";
 
@@ -48,7 +48,7 @@ export function sampleAnimation() {
   }
 
   function stop(config: any, isManual?: boolean, isReverse?: boolean) {
-    logger.debug(`${SAMPLE_ANIMATION} stop`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} stop`);
 
     element.style.border = "initial";
 
@@ -56,18 +56,18 @@ export function sampleAnimation() {
   }
 
   function update(config: any, time: number, isManual?: boolean) {
-    // logger.debug(`${SAMPLE_ANIMATION} update`);
+    // logger.animation.debug(`${SAMPLE_ANIMATION} update`);
 
     timeHolder.innerHTML =
       "Time: " + time.toFixed(2) + (isManual ? "(manual seek)" : "");
   }
 
   function pause(config: any) {
-    logger.debug(`${SAMPLE_ANIMATION} pause`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} pause`);
   }
 
   function resume(config: any) {
-    logger.debug(`${SAMPLE_ANIMATION} resume`);
+    logger.animation.debug(`${SAMPLE_ANIMATION} resume`);
   }
 
   return {
