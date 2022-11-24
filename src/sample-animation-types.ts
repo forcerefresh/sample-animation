@@ -1,7 +1,7 @@
 import {
   IAnimationBase,
   INextZIndex,
-} from "webslider-sdk2/lib/animations/i-animation-types";
+} from "webslider-sdk/lib/animations/i-animation-types";
 
 /**
  * This is animation unique id. This have to be unique string across app.

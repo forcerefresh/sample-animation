@@ -8,8 +8,8 @@ import {
   sampleDefinition,
   sampleMeta,
 } from "./src/sample-animation-app";
-import { addAppAnimationToGlobalScope } from "webslider-sdk2/lib/animations/animation-utils";
-import { IAnimationExtensionAppDefinition } from "webslider-sdk2/lib/animations/animations-register";
+import { addAppAnimationToGlobalScope } from "webslider-sdk/lib/animations/animation-utils";
+import { IAnimationExtensionAppDefinition } from "webslider-sdk/lib/animations/animations-register";
 
 export const animationDefinition: IAnimationExtensionAppDefinition = {
   animationId: SAMPLE_ANIMATION,

@@ -4,8 +4,8 @@
 
 import { SAMPLE_ANIMATION } from "./src/sample-animation-types";
 import { sampleAnimation } from "./src/sample-animation-player";
-import { addPlayerAnimationToGlobalScope } from "webslider-sdk2/lib/animations/animation-utils";
-import { IAnimationExtensionDefinition } from "webslider-sdk2/lib/animations/animations-register";
+import { addPlayerAnimationToGlobalScope } from "webslider-sdk/lib/animations/animation-utils";
+import { IAnimationExtensionDefinition } from "webslider-sdk/lib/animations/animations-register";
 
 export const AnimationDefinition: IAnimationExtensionDefinition = {
   animationId: SAMPLE_ANIMATION,

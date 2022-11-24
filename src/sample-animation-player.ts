@@ -1,6 +1,6 @@
 import { ISampleAnimation, SAMPLE_ANIMATION } from "./sample-animation-types";
-import { getObjectElementById } from "webslider-sdk2/lib/utils/extensions-utils";
-import { logger } from "webslider-sdk2/lib/utils/logger/logger";
+import { getObjectElementById } from "webslider-sdk/lib/utils/extensions-utils";
+import { logger } from "webslider-sdk/lib/utils/logger/logger";
 
 /**
  * Animation implementation for Player

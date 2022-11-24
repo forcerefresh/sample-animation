@@ -1,5 +1,5 @@
-import { ICheckboxInput, InputType } from "webslider-sdk2/lib/inputs/i-inputs";
-import { IAnimationDefinition } from "webslider-sdk2/lib/animations/i-animation-types";
+import { ICheckboxInput, InputType } from "webslider-sdk/lib/inputs/i-inputs";
+import { IAnimationDefinition } from "webslider-sdk/lib/animations/i-animation-types";
 import { SAMPLE_ANIMATION, ISampleAnimation } from "./sample-animation-types";
 import svgIcon from "../static/sample-animation-icon.svg";
 
