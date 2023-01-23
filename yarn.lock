@@ -4614,10 +4614,10 @@ webpack@^5.73.0:
     watchpack "^2.4.0"
     webpack-sources "^3.2.3"
 
-webslider-sdk@^1.1.30:
-  version "1.1.30"
-  resolved "https://registry.yarnpkg.com/webslider-sdk/-/webslider-sdk-1.1.30.tgz#194aeef218d6afc88d571ce5b415c585ce30ca8c"
-  integrity sha512-BQicT5ZppEE9wZumDCghqy2kZGQ7CDWKYTp3Hmu9Uqn6yZlURi/VpE5HV2RVWZBXo+b8EWFdzXPjPiQrqLMJHA==
+webslider-sdk@^1.1.76:
+  version "1.1.76"
+  resolved "https://registry.yarnpkg.com/webslider-sdk/-/webslider-sdk-1.1.76.tgz#915dd6a562af6f76002b0fdad8be984be40982be"
+  integrity sha512-B1KY7/MsQKhm7fN2iqo7pscZwtMTNsvnhL+7y2edOj3KWqGkUcoWa05n4XSTdLM9CKdFH1d9GhGWuLVfyKy6AQ==
 
 websocket-driver@>=0.5.1, websocket-driver@^0.7.4:
   version "0.7.4"
