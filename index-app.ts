@@ -2,21 +2,21 @@
  * This is a entry point for Animation used in Web Slider app.
  */
 
-import { SAMPLE_ANIMATION } from "./src/sample-animation-types";
+import { ANIMATION_UID } from "./src/animation-types";
 import {
   sampleDefaults,
   sampleDefinition,
   sampleMeta,
-} from "./src/sample-animation-app";
+} from "./src/animation-app";
 import { addAppAnimationToGlobalScope } from "webslider-sdk/lib/animations/animation-utils";
 import { IAnimationExtensionAppDefinition } from "webslider-sdk/lib/animations/animations-register";
 
 export const animationDefinition: IAnimationExtensionAppDefinition = {
-  animationId: SAMPLE_ANIMATION,
+  animationId: ANIMATION_UID,
   meta: sampleMeta,
   formDefinition: sampleDefinition,
   formDefaults: sampleDefaults,
 };
 
 // Animation adds itself to global scope in order to be used by Web Slider
-addAppAnimationToGlobalScope(SAMPLE_ANIMATION, animationDefinition);
+addAppAnimationToGlobalScope(ANIMATION_UID, animationDefinition);

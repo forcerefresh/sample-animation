@@ -1,6 +1,6 @@
 import { ICheckboxInput, InputType } from "webslider-sdk/lib/inputs/i-inputs";
 import { IAnimationDefinition } from "webslider-sdk/lib/animations/i-animation-types";
-import { SAMPLE_ANIMATION, ISampleAnimation } from "./sample-animation-types";
+import { ANIMATION_UID, IAnimation } from "./animation-types";
 import svgIcon from "../static/sample-animation-icon.svg";
 
 /**
@@ -12,7 +12,7 @@ export type ISampleTuple = [ICheckboxInput<"showDebugInfo">];
  * Definition of Properties Form inside Web Slider app
  */
 export const sampleDefinition: IAnimationDefinition<ISampleTuple> = {
-  id: SAMPLE_ANIMATION,
+  id: ANIMATION_UID,
   name: "Sample Animation",
   form: [
     {
@@ -28,8 +28,8 @@ export const sampleDefinition: IAnimationDefinition<ISampleTuple> = {
 /**
  * Animation configuration and default values for properties
  */
-export const sampleDefaults: ISampleAnimation = {
-  id: SAMPLE_ANIMATION,
+export const sampleDefaults: IAnimation = {
+  id: ANIMATION_UID,
   hasDelay: true,
   hasDuration: true,
   hasEase: false,

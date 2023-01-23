@@ -1,4 +1,4 @@
-import { ISampleAnimation, SAMPLE_ANIMATION } from "./sample-animation-types";
+import { IAnimation, ANIMATION_UID } from "./animation-types";
 import { getObjectElementById } from "webslider-sdk/lib/utils/extensions-utils";
 import { logger } from "webslider-sdk/lib/utils/logger/logger";
 
@@ -7,13 +7,13 @@ import { logger } from "webslider-sdk/lib/utils/logger/logger";
  * Function returns implementation for animations lifecycle methods:
  * init, rootStart, rootStop, start, stop, destroy, update, pause, resume, preload
  */
-export function sampleAnimation() {
+export function animation() {
   let element: HTMLDivElement;
   let debugInfoHolder: HTMLDivElement;
   let timeHolder: HTMLDivElement;
 
-  function init(config: ISampleAnimation) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} init`);
+  function init(config: IAnimation) {
+    logger.animation.debug(`${ANIMATION_UID} init`);
 
     element = getObjectElementById(config.itemId!)!;
 
@@ -28,19 +28,19 @@ export function sampleAnimation() {
   }
 
   function destroy(config: any) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} destroy`);
+    logger.animation.debug(`${ANIMATION_UID} destroy`);
   }
 
   function rootStart(config: any) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} rootStart`);
+    logger.animation.debug(`${ANIMATION_UID} rootStart`);
   }
 
   function rootStop(config: any) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} rootStop`);
+    logger.animation.debug(`${ANIMATION_UID} rootStop`);
   }
 
   function start(config: any, isManual?: boolean) {
-    logger.animation.debug(`${SAMPLE_ANIMATION}  start`);
+    logger.animation.debug(`${ANIMATION_UID}  start`);
 
     element.style.border = "5px solid red";
 
@@ -48,7 +48,7 @@ export function sampleAnimation() {
   }
 
   function stop(config: any, isManual?: boolean, isReverse?: boolean) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} stop`);
+    logger.animation.debug(`${ANIMATION_UID} stop`);
 
     element.style.border = "initial";
 
@@ -56,18 +56,18 @@ export function sampleAnimation() {
   }
 
   function update(config: any, time: number, isManual?: boolean) {
-    // logger.animation.debug(`${SAMPLE_ANIMATION} update`);
+    logger.animation.debug(`${ANIMATION_UID} update`);
 
     timeHolder.innerHTML =
       "Time: " + time.toFixed(2) + (isManual ? "(manual seek)" : "");
   }
 
   function pause(config: any) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} pause`);
+    logger.animation.debug(`${ANIMATION_UID} pause`);
   }
 
   function resume(config: any) {
-    logger.animation.debug(`${SAMPLE_ANIMATION} resume`);
+    logger.animation.debug(`${ANIMATION_UID} resume`);
   }
 
   return {

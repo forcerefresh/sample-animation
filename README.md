@@ -25,6 +25,13 @@ To run development server:
 
 `yarn start`
 
+## Animation uid/type
+
+Before you can start using the new animation in the web slider, you need to change the UID of the animation to the new one.
+It is recommended to use reverse DNS conventions, e.g. `io.webslider.my-awesome-animation`.
+Since the animation UID is used in multiple places, an easier way is to use the IDE's search/replace function.
+Replace the `sample-animation` string with the new animation uid.
+
 ## Add animation in app
 
 During development, in order to test your animation, you can add it to Web Slider app and get realtime preview.
