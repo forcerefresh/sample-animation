@@ -30,7 +30,7 @@ To run development server:
 Before you can start using the new animation in the web slider, you need to change the UID of the animation to the new one.
 It is recommended to use reverse DNS conventions, e.g. `io.webslider.my-awesome-animation`.
 Since the animation UID is used in multiple places, an easier way is to use the IDE's search/replace function.
-Replace the `sample-animation` string with the new animation uid.
+Replace the `io.webslider.sample-animation` string with the new animation uid.
 
 ## Add animation in app
 
@@ -50,13 +50,13 @@ To build Animation for production:
 
 `yarn build`
 
-Bundle is located in `dist/bundle/sample-animation.zip` folder.  
+Bundle is located in `dist/bundle/io.webslider.sample-animation.zip` folder.  
 It contains following files:
 
 - animation-meta.json
-- sample-animation-app.js
-- sample-animation-player.js
-- sample-animation.logo.svg
+- io.webslider.sample-animation-app.js
+- io.webslider.sample-animation-player.js
+- io.webslider.sample-animation.logo.svg
 
 ## Analyze
 

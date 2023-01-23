@@ -1,7 +1,7 @@
 // This file contains configuration for production build
 const path = require("path");
 
-const MODULE_FILE_NAME_PLAYER = "sample-animation-player.js";
+const MODULE_FILE_NAME_PLAYER = "io.webslider.sample-animation-player.js";
 
 // Configuration for Animation build used in Web Slider Player
 module.exports = {

@@ -2,7 +2,7 @@
 const path = require("path");
 const WebpackStrip = require("strip-loader");
 
-const MODULE_FILE_NAME_APP = "sample-animation-app.js";
+const MODULE_FILE_NAME_APP = "io.webslider.sample-animation-app.js";
 
 // Configuration for animation build used in Web Slider app
 module.exports = {

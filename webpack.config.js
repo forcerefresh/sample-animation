@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CreateHashFileWebpack = require("create-hash-file-webpack");
 
 const PORT = 3005;
-const MODULE_FILE_NAME_PLAYER = "sample-animation-player.js";
-const MODULE_FILE_NAME_APP = "sample-animation-app.js";
-const ANIMATION_UID = "sample-animation";
+const MODULE_FILE_NAME_PLAYER = "io.webslider.sample-animation-player.js";
+const MODULE_FILE_NAME_APP = "io.webslider.sample-animation-app.js";
+const ANIMATION_UID = "io.webslider.sample-animation";
 
 // Common configuration for Animation used in Player and App
 const webpackCommon = {

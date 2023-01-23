@@ -1,6 +1,6 @@
 {
   "componentType": "animation",
-  "type": "sample-animation",
+  "type": "io.webslider.sample-animation",
   "name": "Sample animation",
   "version": "1.0.0",
   "description": "Boilerplate for creating Animation for Web Slider",
@@ -21,8 +21,8 @@
     "url": ""
   },
   "packageFiles": {
-    "playerAnimationFilename": "sample-animation-player.js",
-    "appAnimationFilename": "sample-animation-app.js",
+    "playerAnimationFilename": "io.webslider.sample-animation-player.js",
+    "appAnimationFilename": "io.webslider.sample-animation-app.js",
     "icon": "icon.svg"
   },
   "packageUrl": "",

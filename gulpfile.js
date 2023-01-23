@@ -31,7 +31,7 @@ gulp.task("copy-static", function () {
 gulp.task("bundle", function () {
   return gulp
     .src(["./dist/*", "!./dist/**.LICENSE.txt", "!./dist/**.js.map"])
-    .pipe(zip("sample-animation.zip"))
+    .pipe(zip("io.webslider.sample-animation.zip"))
     .pipe(gulp.dest("./dist/bundle"));
 });
 

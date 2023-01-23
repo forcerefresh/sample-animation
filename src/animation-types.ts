@@ -6,7 +6,7 @@ import {
 /**
  * This is animation unique id. This have to be unique string across app.
  */
-export const ANIMATION_UID = "sample-animation";
+export const ANIMATION_UID = "io.webslider.sample-animation";
 
 /**
  * Define Animation properties types.
