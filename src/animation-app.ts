@@ -1,7 +1,7 @@
 import { ICheckboxInput, InputType } from "webslider-sdk/lib/inputs/i-inputs";
 import { IAnimationDefinition } from "webslider-sdk/lib/animations/i-animation-types";
 import { ANIMATION_UID, IAnimation } from "./animation-types";
-import svgIcon from "../static/sample-animation-icon.svg";
+import svgIcon from "../static/icon.svg";
 
 /**
  * Type for Definition of Properties Form inside Web Slider app

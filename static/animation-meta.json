@@ -23,7 +23,7 @@
   "packageFiles": {
     "playerAnimationFilename": "sample-animation-player.js",
     "appAnimationFilename": "sample-animation-app.js",
-    "icon": "sample-animation-icon.svg"
+    "icon": "icon.svg"
   },
   "packageUrl": "",
   "logoUrl": "",
