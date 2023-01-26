@@ -1,12 +1,12 @@
 {
-  "name": "zzz-animation",
+  "name": "sample-animation",
   "version": "1.0.0",
   "license": "EULA",
   "scripts": {
     "start": "webpack serve --open",
     "build": "gulp",
-    "analyze-player": "source-map-explorer 'dist/zzz-animation-player.js'",
-    "analyze-app": "source-map-explorer 'dist/zzz-animation-app.js'"
+    "analyze-player": "source-map-explorer 'dist/io.webslider.sample-animation-player.js'",
+    "analyze-app": "source-map-explorer 'dist/io.webslider.sample-animation-app.js'"
   },
   "dependencies": {
     "webslider-sdk": "^1.1.76"
