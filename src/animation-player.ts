@@ -13,7 +13,7 @@ export function animation() {
   let timeHolder: HTMLDivElement;
 
   function init(config: IAnimation) {
-    logger.animation.debug(`${ANIMATION_UID} init`);
+    logger.animation.debug("io.webslider.sample-animation::init");
 
     element = getObjectElementById(config.itemId!)!;
 
@@ -28,19 +28,19 @@ export function animation() {
   }
 
   function destroy(config: any) {
-    logger.animation.debug(`${ANIMATION_UID} destroy`);
+    logger.animation.debug("io.webslider.sample-animation::destroy");
   }
 
   function rootStart(config: any) {
-    logger.animation.debug(`${ANIMATION_UID} rootStart`);
+    logger.animation.debug("io.webslider.sample-animation::rootStart");
   }
 
   function rootStop(config: any) {
-    logger.animation.debug(`${ANIMATION_UID} rootStop`);
+    logger.animation.debug("io.webslider.sample-animation::rootStop");
   }
 
   function start(config: any, isManual?: boolean) {
-    logger.animation.debug(`${ANIMATION_UID}  start`);
+    logger.animation.debug("io.webslider.sample-animation::start");
 
     element.style.border = "5px solid red";
 
@@ -48,7 +48,7 @@ export function animation() {
   }
 
   function stop(config: any, isManual?: boolean, isReverse?: boolean) {
-    logger.animation.debug(`${ANIMATION_UID} stop`);
+    logger.animation.debug("io.webslider.sample-animation::stop");
 
     element.style.border = "initial";
 
@@ -56,18 +56,18 @@ export function animation() {
   }
 
   function update(config: any, time: number, isManual?: boolean) {
-    logger.animation.debug(`${ANIMATION_UID} update`);
+    logger.animation.debug("io.webslider.sample-animation::update");
 
     timeHolder.innerHTML =
       "Time: " + time.toFixed(2) + (isManual ? "(manual seek)" : "");
   }
 
   function pause(config: any) {
-    logger.animation.debug(`${ANIMATION_UID} pause`);
+    logger.animation.debug("io.webslider.sample-animation::pause");
   }
 
   function resume(config: any) {
-    logger.animation.debug(`${ANIMATION_UID} resume`);
+    logger.animation.debug("io.webslider.sample-animation::resume");
   }
 
   return {
