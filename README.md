@@ -56,7 +56,7 @@ It contains following files:
 - animation-meta.json
 - io.webslider.sample-animation-app.js
 - io.webslider.sample-animation-player.js
-- io.webslider.sample-animation.logo.svg
+- logo.svg
 
 ## Analyze
 
